@@ -279,12 +279,11 @@ section{
 
     }
     .counter-item{
+        cursor: pointer;
         background-image: linear-gradient(130deg, var(--color-background-primary), var(--color-white));
         border-radius: var(--border-radius-lg);
         padding: var(--spacing-xl) var(--spacing-mxl);
         box-shadow: 0 0 10px var(--color-shadow);
-
-
 
         h2{
             font-size: 4.5rem;
@@ -297,13 +296,17 @@ section{
             color: var(--color-primary);
         }
     }
+
+    .counter-item:hover{
+        background-image: linear-gradient(130deg, var(--color-white), var(--color-background-primary));
+    }
 }
 
 /* About Section */
 #about{
     background-color: var(--color-background-dark);
     color: var(--color-white);    
-
+   
     .row{
         padding: var(--spacing-mxl) 0;
     }
@@ -410,6 +413,10 @@ section{
 
     #about{
         padding: var(--spacing-md);
+
+        p{
+            text-align: justify;
+        }
 
         .row{
             padding: var(--spacing-xl) 0;

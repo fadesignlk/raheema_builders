@@ -502,8 +502,16 @@ img{
         font-size: 2.2rem;
     }
 
+    h2{
+        font-size: 1.9rem;
+    }
+
     h5{
         font-size: 1.1rem;
+    }
+
+    h6{
+        font-size: 0.9rem;
     }
 
     p{
@@ -554,10 +562,10 @@ img{
     }
 
     #services{
-        padding: var(--spacing-md);
+        padding: var(--spacing-xl) var(--spacing-md);
 
         .row{
-            padding: var(--spacing-xl) 0;
+            padding: var(--spacing-md) 0;
         }
     }
 
@@ -571,6 +579,7 @@ img{
 
     #how-we-work{
         padding: var(--spacing-md);
+
         .row{
             padding: var(--spacing-xl) 0;
         }
@@ -586,7 +595,9 @@ img{
         }
     }
 
-
+    footer{
+        padding: var(--spacing-md);
+    }
 
 
 }

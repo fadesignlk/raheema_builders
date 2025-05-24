@@ -7,6 +7,7 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
     <link rel="stylesheet" href="./src/css/style.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
   </head>
   <body>
     <!-- Navbar -->
@@ -76,7 +77,7 @@
                 <div class="carousel-item active" style="background-image: url('/src/img/home/slider/01.webp');">
                     <div class="container">
                         <div class="row" >
-                            <div class="col-md-8">
+                            <div class="col-md-8" data-aos="fade-up" data-aos-duration="1000">
                                 <h5>Building the better future</h5>    
                                 <!-- SEO Optimized H1 title related to the construction in sri lanka -->             
                                 <h1>Trusted Building Construction Company in Sri Lanka</h1>
@@ -89,7 +90,7 @@
                 <div class="carousel-item" style="background-image: url('/src/img/home/slider/13.webp');">
                     <div class="container">
                         <div class="row" >
-                            <div class="col-md-8">
+                            <div class="col-md-8" data-aos="fade-up" data-aos-duration="1000">
                                 <h5>Creating spaces for life</h5>
                                 <h1>Leading Property Developers in Colombo, Sri Lanka</h1>
                                 <p>As leading property developers in Colombo, Sri Lanka, we are committed to crafting innovative and sustainable living and working environments. Explore our diverse portfolio of exceptional properties designed with you in mind.</p>
@@ -101,7 +102,7 @@
                 <div class="carousel-item" style="background-image: url('/src/img/home/slider/01.webp');">
                     <div class="container">
                         <div class="row" >
-                            <div class="col-md-8">
+                            <div class="col-md-8" data-aos="fade-up" data-aos-duration="1000">
                                 <h5>Constructing your vision, brick by brick</h5>
                                 <h1>Your Reliable Partner for Home Construction in Sri Lanka</h1>
                                 <p>Building your dream home in Sri Lanka? Look no further. We are your reliable partner, providing comprehensive home construction services with a focus on quality craftsmanship and attention to detail, ensuring your vision becomes a reality.</p>
@@ -119,18 +120,18 @@
         <div class="d-flex flex-column flex-md-row text-center text-md-start">
             <div class="w-100 me-md-3 mb-4 mb-md-0 counter-item">
                 <i class="bi bi-stack"></i>
-                <h2>100+</h2>
+                <h2 class="num-counter" data-limit="100">0</h2>
                 <p>Completed Projects</p>
             </div>
             <div class="w-100 me-md-3 mb-4 mb-md-0 counter-item">
                 <i class="bi bi-person-check"></i>
-                <h2>20+</h2>
+                <h2 class="num-counter" data-limit="20">0</h2>
                 <p>Expert Team Members</p>
             </div>
 
             <div class="w-100 me-md-3 mb-4 mb-md-0 counter-item">
                 <i class="bi bi-chat-dots"></i>
-                <h2>500+</h2>
+                <h2 class="num-counter" data-limit="500">0</h2>
                 <p>Happy Clients</p>
             </div>
         </div>
@@ -141,10 +142,10 @@
         <div class="container">
             <div class="row">
                 <div class="col-md-6">
-                    <img src="/src/img/home/about.webp" alt="About Us" class="img-fluid">
+                    <img src="/src/img/home/about.webp" alt="About Us" class="img-fluid" data-aos="fade-up" data-aos-duration="1000">
                 </div>
                 <div class="col-md-6">
-                    <div class="d-flex flex-column justify-content-center h-100" id="about-text">
+                    <div class="d-flex flex-column justify-content-center h-100" id="about-text" data-aos="fade-down" data-aos-duration="1000">
                         <h6>About Raheema Builders</h6>
                         <h2>Building Dreams, One Brick at a Time</h2>
                         <p>We are a leading construction company in Sri Lanka, specializing in residential and commercial projects. With a commitment to quality and customer satisfaction, we have successfully completed numerous projects across the country.</p>
@@ -160,26 +161,26 @@
     <section id="services">
         <div class="container">
             <div class="text-center mb-5">
-                <h6>What we Offer</h6>
-                <h2>Explore Our Services</h2>
-                <p>We offer a wide range of construction services to meet your needs. From residential to commercial projects, we have the expertise and experience to deliver exceptional results.</p>            
+                <h6 data-aos="fade-right">What we Offer</h6>
+                <h2 data-aos="fade-right" data-aos-duration="800">Explore Our Services</h2>
+                <p data-aos="fade-up" data-aos-duration="1000">We offer a wide range of construction services to meet your needs. From residential to commercial projects, we have the expertise and experience to deliver exceptional results.</p>            
             </div>
             <div class="row gx-md-3 gy-3">
-                <div class="col-md-4 service-item">
+                <div class="col-md-4 service-item" data-aos="flip-left" data-aos-duration="1000">
                     <div>
                         <i class="bi bi-house-gear-fill"></i>
                         <h3>Residential Construction</h3>
                         <p>We specialize in building beautiful and functional homes that meet the needs of our pretigious clients around the island.</p>
                     </div>
                 </div>
-                <div class="col-md-4 service-item">
+                <div class="col-md-4 service-item" data-aos="flip-right" data-aos-duration="1000">
                     <div>
                         <i class="bi bi-buildings-fill"></i>
                         <h3>Commercial Construction</h3>
                         <p>Our team has extensive experience in commercial construction, delivering projects on time and within budget.</p>
                     </div>
                 </div>
-                <div class="col-md-4 service-item">
+                <div class="col-md-4 service-item" data-aos="flip-left" data-aos-duration="1000">
                     <div>
                         <i class="bi bi-cone-striped"></i>
                         <h3>Building Maintenance</h3>
@@ -194,10 +195,10 @@
     <section id="how-we-work">
         <div class="container">
             <div class="row">
-                <div class="col-md-6">
+                <div class="col-md-6" data-aos="zoom-in" data-aos-duration="1000">
                     <img src="/src/img/home/work.jpg" alt="About Us" class="img-fluid">
                 </div>
-                <div class="col-md-6">
+                <div class="col-md-6" data-aos="fade-up" data-aos-duration="1000">
                     <div class="d-flex flex-column align justify-content-center h-100" id="how-we-work-text">
                         <h6>How we Works</h6>
                         <h2>We Raheema Builders, </h2>
@@ -225,9 +226,9 @@
     <!-- Sliding Client Testimonials -->
     <section id="testimonials">
         <div class="container">
-            <div class="text-center mb-5">
-                <h6>What Our Clients Say</h6>
-                <h2>Client Testimonials</h2>
+            <div class="text-center mb-5" data-aos="fade-down" data-aos-duration="1000">
+                <h6>Client Testimonials</h6>
+                <h2>What Our Clients Say</h2>
             </div>
             
             <div class="row">
@@ -240,7 +241,7 @@
                                     <p>
                                         "Raheema Builders transformed my dream home into a reality. Their attention to detail and commitment to quality is unmatched. I couldn't be happier with the results!"
                                     </p>
-                                    <p>
+                                    <p class="border-top pt-3">
                                         <strong>- John Doe</strong><br>
                                         <small>CEO, ABC Company</small>
                                     </p>
@@ -251,33 +252,7 @@
                                     <p>
                                         "Raheema Builders transformed my dream home into a reality. Their attention to detail and commitment to quality is unmatched. I couldn't be happier with the results!"
                                     </p>
-                                    <p>
-                                        <strong>- John Doe</strong><br>
-                                        <small>CEO, ABC Company</small>
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-                      </div>
-                      <div class="carousel-item">
-                        <div class="row gx-md-3 gy-4">
-                            <div class="col-md-6">
-                                <div>
-                                    <p>
-                                        "Raheema Builders transformed my dream home into a reality. Their attention to detail and commitment to quality is unmatched. I couldn't be happier with the results!"
-                                    </p>
-                                    <p>
-                                        <strong>- John Doe</strong><br>
-                                        <small>CEO, ABC Company</small>
-                                    </p>
-                                </div>
-                            </div>
-                            <div class="col-md-6">
-                                <div>
-                                    <p>
-                                        "Raheema Builders transformed my dream home into a reality. Their attention to detail and commitment to quality is unmatched. I couldn't be happier with the results!"
-                                    </p>
-                                    <p>
+                                    <p class="border-top pt-3">
                                         <strong>- John Doe</strong><br>
                                         <small>CEO, ABC Company</small>
                                     </p>
@@ -292,7 +267,7 @@
                                     <p>
                                         "Raheema Builders transformed my dream home into a reality. Their attention to detail and commitment to quality is unmatched. I couldn't be happier with the results!"
                                     </p>
-                                    <p>
+                                    <p class="border-top pt-3">
                                         <strong>- John Doe</strong><br>
                                         <small>CEO, ABC Company</small>
                                     </p>
@@ -303,7 +278,33 @@
                                     <p>
                                         "Raheema Builders transformed my dream home into a reality. Their attention to detail and commitment to quality is unmatched. I couldn't be happier with the results!"
                                     </p>
+                                    <p class="border-top pt-3">
+                                        <strong>- John Doe</strong><br>
+                                        <small>CEO, ABC Company</small>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                      </div>
+                      <div class="carousel-item">
+                        <div class="row gx-md-3 gy-4">
+                            <div class="col-md-6">
+                                <div>
                                     <p>
+                                        "Raheema Builders transformed my dream home into a reality. Their attention to detail and commitment to quality is unmatched. I couldn't be happier with the results!"
+                                    </p>
+                                    <p class="border-top pt-3">
+                                        <strong>- John Doe</strong><br>
+                                        <small>CEO, ABC Company</small>
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div>
+                                    <p>
+                                        "Raheema Builders transformed my dream home into a reality. Their attention to detail and commitment to quality is unmatched. I couldn't be happier with the results!"
+                                    </p>
+                                    <p class="border-top pt-3">
                                         <strong>- John Doe</strong><br>
                                         <small>CEO, ABC Company</small>
                                     </p>
@@ -330,10 +331,80 @@
         <div class="container">
             <p class="mb-0 text-center">Copyright &copy; 2025 Raheema Builders. All Rights Reserved.</p>
         </div>
-    </footer>
-    
-
+    </footer> 
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js" integrity="sha384-k6d4wzSIapyDyv1kpU366/PK5hCdSbCRGRCMv+eplOQJWyd1fbcAu9OCUj5zNLiq" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="./src/js/counter.js"></script>
+    <script>
+        AOS.init();
+
+        document.addEventListener('DOMContentLoaded', () => {
+            const counterElements = document.querySelectorAll('.num-counter');
+
+            counterElements.forEach(counterElement => {
+                let count = 0;
+                const limit = parseInt(counterElement.dataset.limit);
+
+                if (isNaN(limit)) {
+                    console.error('Error: "data-limit" attribute is missing or invalid for a counter:', counterElement);
+                    return;
+                }
+
+                let intervalId; // To hold the ID of the current interval
+
+                // Function to determine the interval speed based on the current count
+                function getDynamicInterval(currentCount, totalLimit) {
+                    const percentage = currentCount / totalLimit;
+
+                    if (percentage < 0.75) { // Faster for the first 75% of the count
+                        return 10; // Very fast
+                    } else if (percentage < 0.90) { // Medium speed for the next 15%
+                        return 30; // Moderately fast
+                    } else { // Slower for the last 10% (as it approaches the limit)
+                        return 50; // Slower
+                    }
+                }
+
+                // Function to update the counter's value and manage the interval
+                function updateCounter() {
+                    // First, update the count
+                    const step = 1; // Still incrementing by 1
+                    if (count < limit) {
+                        count += step;
+                        if (count > limit) {
+                            count = limit;
+                        }
+                        counterElement.textContent = count;
+                    } else {
+                        clearInterval(intervalId); // Stop the interval when the limit is reached
+                        counterElement.textContent = limit; // Ensure it shows the exact limit
+                        console.log(`Counter for limit ${limit} has finished counting!`);
+                        return; // Exit the function as it's done
+                    }
+
+                    // Now, determine the next interval speed
+                    const nextInterval = getDynamicInterval(count, limit);
+
+                    // If the interval speed needs to change, clear the old interval and set a new one
+                    // This check prevents unnecessary clearing/setting if speed doesn't change
+                    if (intervalId && counterElement._currentInterval !== nextInterval) {
+                        clearInterval(intervalId); // Clear the old interval
+                        intervalId = setInterval(updateCounter, nextInterval); // Set a new interval
+                        counterElement._currentInterval = nextInterval; // Store the current interval speed
+                    } else if (!intervalId) { // This handles the very first start
+                        intervalId = setInterval(updateCounter, nextInterval);
+                        counterElement._currentInterval = nextInterval;
+                    }
+                }
+
+                // Initialize the first interval (start the counter)
+                // We set it outside the updateCounter call to make sure it kicks off
+                const initialInterval = getDynamicInterval(count, limit);
+                intervalId = setInterval(updateCounter, initialInterval);
+                counterElement._currentInterval = initialInterval; // Store the initial speed
+            });
+        });
+    </script>
   </body>
 </html>

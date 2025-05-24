@@ -379,6 +379,7 @@ section{
 }
 
 #how-we-work{
+    background-color: var(--color-white);
     .row{
         padding: var(--spacing-mxl) 0;
     }
@@ -401,17 +402,27 @@ section{
 
 #testimonials{
     padding: var(--spacing-mxl) 0;
-    background-color: var(--color-white);
 
     h6{
         color: var(--color-primary);
     }
 
-    .carousel-item .col-md-6 div{
-        padding: var(--spacing-xl) var(--spacing-lg);
-        color: var(--color-white);
-        background-color: var(--color-background-shade);
-        border-radius: var(--border-radius-lg);
+    .carousel-inner{
+                border-radius: var(--border-radius-lg);
+
+    }
+
+    .carousel-item {
+
+        .col-md-6 { 
+
+            div{
+                padding: var(--spacing-lg);
+                color: var(--color-text);
+                background-color: var(--color-white);
+                border-radius: var(--border-radius-lg);
+            }
+        }
     }
 
     .carousel-control-prev{

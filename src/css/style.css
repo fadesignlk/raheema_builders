@@ -421,6 +421,17 @@ section{
                 color: var(--color-text);
                 background-color: var(--color-white);
                 border-radius: var(--border-radius-lg);
+
+                p{
+                    strong{
+                        color: var(--color-primary);
+                        font-size: 1.25rem;
+                    }
+
+                    small{
+                        color: var(--color-black);
+                    }
+                }
             }
         }
     }

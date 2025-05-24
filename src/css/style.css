@@ -122,7 +122,6 @@ ul{
     background-color: var(--color-primary);
     color: var(--color-white);
     border: none;
-    padding: var(--spacing-md)  var(--spacing-lg);
     border-radius: 0;
     border-bottom-right-radius: var(--border-radius-md);
     transition: background-color var(--transition) ;
@@ -167,6 +166,7 @@ ul{
             color: var(--color-primary) !important;
         }
 
+
         .navbar-nav > li:first-child > a {
             padding-left: 0;
         }
@@ -191,8 +191,22 @@ ul{
                 
                 div.bottom{
                     padding-left: var(--spacing-md) ;
+
+                    .navbar-nav{
+                        .nav-item{
+                            padding: var(--spacing-md) 0;
+                        }
+                    }
                 }
              
+            }
+        }
+
+        .dropdown-menu{
+            top:67px;
+            border-radius: 0 0 var(--border-radius-md) var(--border-radius-md);
+            li{
+                padding: var(--spacing-sm) var(--spacing-md);
             }
         }
     }
@@ -245,6 +259,7 @@ button.navbar-toggler:focus {
 .navbar-toggler:not(.collapsed) .line:nth-child(3) {
     transform: translateY(-0.6rem) rotate(-45deg);
 }
+
 
 section{
     padding: var(--spacing-lg) var(--spacing-xl);
@@ -478,6 +493,81 @@ img{
     border-radius: var(--border-radius-lg);
 }
 
+#breadcrumb-section {
+    color: var(--color-white);
+
+
+    .breadcrumb-bg{
+        padding: var(--spacing-mxl) 0;
+        border-radius: var(--border-radius-md);
+        background-size: cover !important;
+        background-position: center !important;
+        background-repeat: no-repeat !important;
+    }
+
+    h1{
+        color: var(--color-white);
+        margin-bottom: var(--spacing-md);
+    }  
+
+    .breadcrumb-item + .breadcrumb-item::before {
+        /* content: ">"; */
+        color: var(--color-primary);
+    }
+
+    .breadcrumb-item a {
+        color: var(--color-white);
+        text-decoration: none;
+    }
+
+    .breadcrumb-item a:hover {
+        color: var(--color-primary);
+    }
+
+    .breadcrumb-item.active {
+        color: var(--color-primary);
+    }
+}
+
+#service-description-01{
+    img{
+        object-fit: cover;
+        height: 350px;
+        width: 100%;
+    }
+}
+
+#services-includes{
+    color: var(--color-black);
+    
+    .container{
+        background-color: var(--color-white);
+        padding: var(--spacing-xl) ;
+        border-radius: var(--border-radius-lg);
+    }
+
+    .nav-tabs{
+        padding-bottom: 20px;
+        border-bottom: 1px solid var(--color-border);
+        button{
+            background-color: var(--color-background-dark);
+            color: var(--color-white);
+            border: none;
+            padding: var(--spacing-md);
+            border-radius: var(--border-radius-md);
+            transition: background-color var(--transition), color var(--transition);
+
+            &:hover, &.active{
+                background-color: var(--color-primary);
+                color: var(--color-white);
+            }
+        }
+    }
+
+
+
+}
+
 /* Media Queries */
 
 /* Targeting typical mobile phone widths (up to ~599px) */
@@ -643,5 +733,40 @@ img{
 @media (min-width: 992px) {
     .container {
         width: 80%;
+    }    
+    .navbar-expand-lg .navbar-nav .dropdown-menu {
+        display: none;
+        margin-top: 0; /* Remove default margin */
+        transition: opacity 0.2s ease-in-out, visibility 0.2s ease-in-out; /* For fade effect */
+        opacity: 0;
+        visibility: hidden;
+    }
+
+    /* Force the dropdown to be displayed on hover of the parent .dropdown */
+    .navbar-expand-lg .navbar-nav .dropdown:hover .dropdown-menu {
+        display: block; /* The key to overriding after click */
+        opacity: 1;
+        visibility: visible;
+    }
+
+    /* Important: Override Bootstrap's .show class on hover to prevent conflicts */
+    /* This ensures that if the 'show' class is added by JS, our hover still controls display */
+    .navbar-expand-lg .navbar-nav .dropdown:hover .dropdown-menu.show {
+        display: block !important;
+        opacity: 1 !important;
+        visibility: visible !important;
+    }
+
+    /* Hide the dropdown menu if .show class is present but NOT hovered */
+    /* This makes sure that after a click, if the mouse leaves, it still hides */
+    .navbar-expand-lg .navbar-nav .dropdown-menu.show:not(.dropdown:hover .dropdown-menu) {
+        display: none !important;
+        opacity: 0 !important;
+        visibility: hidden !important;
+    }
+
+    /* Optional: Keep the dropdown toggle background active on hover */
+    .navbar-expand-lg .navbar-nav .dropdown:hover > .nav-link {
+        color: var(--color-primary) !important; /* Change color on hover */
     }
 }

@@ -294,25 +294,31 @@ section{
 #counter{
     .counter-item{
         cursor: pointer;
-        background-image: linear-gradient(130deg, var(--color-background-primary), var(--color-white));
+        background-image: linear-gradient(230deg, var(--color-primary), var(--color-background-dark));
         border-radius: var(--border-radius-lg);
         padding: var(--spacing-xl) var(--spacing-mxl);
         box-shadow: 0 0 10px var(--color-shadow);
+        color: var(--color-white);
+        transition: all var(--transition);
+        
+
 
         h2{
             font-size: 4.5rem;
+        color: var(--color-white);
+
         }
 
         .bi{
             font-size: 3.3rem;
             margin-bottom: var(--spacing-md);
             display: block;
-            color: var(--color-primary);
+            color: var(--color-white);
         }
     }
 
     .counter-item:hover{
-        background-image: linear-gradient(130deg, var(--color-white), var(--color-background-primary));
+        background-image: linear-gradient(130deg, var(--color-primary), var(--color-background-dark));
     }
 }
 
@@ -639,13 +645,27 @@ img{
         }
 
         #contact-card{
-            .bi{
-                font-size: 3.5rem;
+
+            p{
+                margin-bottom: 0;
+            
             }
 
-            .col-md-6{
-                background-color: var(--color-white);
-                padding: var(--spacing-lg);
+            margin-top: 0.2rem;
+            .bi{
+                font-size: 3.5rem;
+                display: inline-block;
+                color: var(--color-primary);
+                margin-bottom: 0.75rem;
+            }
+
+            .col{
+                div{
+                    background-color: var(--color-white);
+                    padding: var(--spacing-lg);
+                    border-radius: var(--border-radius-lg);
+                    margin-right: 1rem;
+                }
             }
         }
 

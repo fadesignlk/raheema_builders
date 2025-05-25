@@ -664,7 +664,6 @@ img{
                     background-color: var(--color-white);
                     padding: var(--spacing-lg);
                     border-radius: var(--border-radius-lg);
-                    margin-right: 1rem;
                 }
             }
         }
@@ -676,10 +675,10 @@ img{
             }
 
             form{
-                            background-color: var(--color-white);
-            padding: var(--spacing-xl) var(--spacing-lg);
-            border-radius: var(--border-radius-lg);
-            box-shadow: 0 0 10px var(--color-shadow);
+                background-color: var(--color-white);
+                padding: var(--spacing-xl) var(--spacing-lg);
+                border-radius: var(--border-radius-lg);
+                box-shadow: 0 0 10px var(--color-shadow);
             }
 
             .form-control{
@@ -866,6 +865,10 @@ img{
 
     #ready-to-work-section{
         padding: var(--spacing-md);
+
+        .container{
+            padding: var(--spacing-xl);
+        }
     }
 
     #projects-section{

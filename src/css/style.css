@@ -491,7 +491,7 @@ section{
 
 footer{
     background-color: var(--color-background-dark);
-    color: var(--color-text);
+    color: var(--color-border);
     padding: var(--spacing-lg) 0;
     
 
@@ -500,11 +500,11 @@ footer{
     }
 
     a{
-        color: var(--color-text);
+        color: var(--color-border);
     }
 
     a:hover {
-        color: var(--color-text) ;
+        color: var(--color-white) ;
     }
 }
 
@@ -856,6 +856,10 @@ img{
 
     #services-includes{
         padding: var(--spacing-md);
+
+        .nav-tabs .nav-item{
+            margin-bottom: var(--spacing-sm);
+        }
     }
 
     #ready-to-work-section{
